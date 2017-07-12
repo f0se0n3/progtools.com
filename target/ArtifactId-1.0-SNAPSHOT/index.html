@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project2</title>
+        <style>
+            body {
+                background-color: black;
+                margin: 0px;
+                font-family: monospace;
+            }
+            p {
+                font-size: 15px;
+            }
+            a {
+                text-decoration: none;
+                color: cornflowerblue;
+            }
+            .login-header {
+                text-align: right;
+                padding-top: 8px;
+                margin-bottom: 8px;
+            }
+            .login-header a {
+                font-size: 16px;
+                color: cornflowerblue;
+                padding: 8px;
+            }
+            .login-header a:hover {
+                background-color: rgb(30,30,30);
+                color: white;
+                transition: .1600ms;
+            }
+            .header-menu {
+                text-align: center;
+                list-style: none;
+                font-size: 20px;
+                display: inline;
+            }
+            .header-menu {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: inline;
+            }
+
+            .header-menu-wrapper {
+                background-color: rgb(30,30,30);
+                width: 100%;
+                padding-top: 18px;
+                top: 35px;
+                padding-bottom: 20px;
+                text-align: center;
+                position: fixed;
+                transform: translateX(0%);
+            }
+            .header-menu a {
+                padding: 18px 50px 20px 50px;
+                background-color: rgb(30,30,30);
+                text-decoration: none;
+                color: grey;
+            }
+            .header-menu a:hover {
+                color: white;
+                background-color: black;
+                transition: .1400ms;
+            }
+            .main {
+                color: lightgrey;
+                background-color: rgb(20,20,20);
+                margin-left: 100px;
+                margin-right: 100px;
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            h2 {
+                text-align: center;
+                color: indianred;
+            }
+            .home-screen {
+                padding-bottom: 20px;
+            }
+            .main-screen-links {
+                align-items: center;
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .front-end, 
+            .back-end {
+                padding: 20px;
+                background-color: rgb(30,30,30);
+                margin-bottom: 10px;
+            }
+            .front-end:hover,
+            .back-end:hover {
+                background-color: black;
+                color: #fff;
+                transition: .1700ms;
+            }
+        </style>
+    </head>
+    <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).scroll(function(){
+            $("#header-menu-wrapper").css("top",Math.max(0,35-$(this).scrollTop()));
+            $("#header-menu").css("padding-top",Math.max(0,18-$(this).scrollTop()));
+        });
+    </script>
+        <div class="header-wrapper">
+            <div class="login-header">
+                <a link href="#">Register</a>
+                <a link href="#">Login</a>
+            </div>
+            <div class="header-menu-wrapper" id="header-menu-wrapper">
+                <div class="header-menu" id="header-menu">
+                    <a link href="#">Windows 10</a>
+                    <a link href="#">Windows 7</a>
+                    <a link href="#">Windows Vista</a>
+                    <a href="#scrolltoxp">Windows XP</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="home-screen">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h2>Introduction</h2>
+                <br/>
+                <br/>
+                <p>
+                    If you were looking for site filled with different programs for both front- and back-end development on Windows - you are in the right place.
+                    We have different setups from different users on different Windows versions starting from XP. You can see how easy it is to find an IDE or any other tool exactly for your needs.
+                    You can also <a link href="#">create an account</a> and post your setup.
+                </p>
+                <br/>
+                <h2>Communication</h2>
+                <p>
+                    Also check our <a link href="#">forum</a>, where you can find info on how to install or edit any program used in any setup.
+                    If you haven't found what you need to or wanted program's topic doesn't exist - feel free to ask a question.
+                </p>
+                <br/>
+                <h2>All for one and one for all</h2>
+                <p>
+                    You can use your account here to log into your forum account even though you haven't created one! It's much more comfortable and simple to remember one password for two services, isn't it?
+
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="win10screen">
+                <br/>
+                <br/>
+                <h2>Windows 10</h2>
+                <br/>
+                <p>
+                    Choose what type of programming setups you want to search for:
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="main-screen-links">
+                    <div class="front-end">
+                        <a link href="#">Front-end developer setups</a>
+                    </div>
+                    <div class="back-end">
+                        <a link href="#">Back-end developer setups</a>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="win7screen" id="win7screen">
+                <br/>
+                <br/>
+                <h2>Windows 7</h2>
+                <br/>
+                <p>
+                    Choose what type of programming setups you want to search for:
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="main-screen-links">
+                    <div class="front-end">
+                        <a link href="#">Front-end developer setups</a>
+                    </div>
+                    <div class="back-end">
+                        <a link href="#">Back-end developer setups</a>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="winvistascreen" id="winvistascreen">
+                <br/>
+                <br/>
+                <h2>Windows Vista</h2>
+                <br/>
+                <p>
+                    Choose what type of programming setups you want to search for:
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="main-screen-links">
+                    <div class="front-end">
+                        <a link href="#">Front-end developer setups</a>
+                    </div>
+                    <div class="back-end">
+                        <a link href="#">Back-end developer setups</a>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="winxpscreen">
+                <div id="scrolltoxp"><a href="xplink"></a></div>
+                <br/>
+                <br/>
+                <h2>Windows XP</h2>
+                <br/>
+                <p>
+                    Choose what type of programming setups you want to search for:
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="main-screen-links">
+                    <div class="front-end">
+                        <a link href="#">Front-end developer setups</a>
+                    </div>
+                    <div class="back-end">
+                        <a link href="#">Back-end developer setups</a>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </body>
+</html>
